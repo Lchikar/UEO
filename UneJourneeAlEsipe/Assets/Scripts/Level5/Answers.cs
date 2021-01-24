@@ -1,24 +1,39 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using System.Collections;
 
 public class Answers : MonoBehaviour
 {
     public bool isCorrect = false;
     public QuizManager quizManager;
 
+    IEnumerator CorrectTimer(float seconds)
+    {
+        GetComponent<Image>().color = Color.green;
+        GetComponent<Button>().interactable = false;
+        yield return new WaitForSeconds(seconds);
+        quizManager.correct();
+    }
+
+    IEnumerator WrongTimer(float seconds)
+    {
+        GetComponent<Image>().color = Color.red;
+        GetComponent<Button>().interactable = false;
+        yield return new WaitForSeconds(seconds);
+        quizManager.wrong();
+    }
+
     public void Answer()
     {
-        if(isCorrect)
+        if (isCorrect)
         {
             Debug.Log("Correct answer");
-            /*var colors = quizManager.m_options[quizManager.m_indexAnswer].GetComponent<Button>().colors;
-            colors.normalColor = Color.green;
-            quizManager.m_options[quizManager.m_indexAnswer].GetComponent<Button>().colors = colors;*/
-            quizManager.correct();
+            StartCoroutine("CorrectTimer", 5);
         } else
         {
             Debug.Log("Wrong answer");
-            quizManager.wrong();
+            StartCoroutine("WrongTimer", 5);
         }
     }
 }

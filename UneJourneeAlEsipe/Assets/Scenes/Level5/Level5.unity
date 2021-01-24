@@ -1762,14 +1762,14 @@ MonoBehaviour:
     - "St\xE9phanie Ma\xEEtre"
     - Luc Chevalier
     - Etienne Duris
-    m_correctAnswer: 3
+    m_correctAnswer: 2
   - m_questions: Quelle composante ne fait pas partie de l'ESIPE ?
     m_answers:
     - IMAC
     - "G\xE9nie m\xE9canique"
     - "Maintenance & Fiabilit\xE9 des Processus Industriels"
     - EVMAN
-    m_correctAnswer: 4
+    m_correctAnswer: 3
   - m_questions: Autre question je sais pas
     m_answers:
     - ui
@@ -1783,7 +1783,6 @@ MonoBehaviour:
   - {fileID: 228760941}
   - {fileID: 551953721}
   m_currentQuestion: 0
-  m_indexAnswer: 0
   m_questionText: {fileID: 739528213}
   m_scoreText: {fileID: 2126319491}
   m_quizPanel: {fileID: 1436700700}

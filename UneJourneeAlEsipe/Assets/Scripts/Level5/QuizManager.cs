@@ -8,7 +8,6 @@ public class QuizManager : MonoBehaviour
     public List<Database> m_database;
     public GameObject[] m_options;
     public int m_currentQuestion;
-    public int m_indexAnswer;
     public Text m_questionText;
     public Text m_scoreText;
     public GameObject m_quizPanel;
@@ -36,6 +35,7 @@ public class QuizManager : MonoBehaviour
         m_scoreText.text = m_score.ToString() + '/' + m_totalQuestions.ToString();
     }
 
+
     public void correct()
     {
         m_score += 1;
@@ -52,9 +52,10 @@ public class QuizManager : MonoBehaviour
     {
         for(int i = 0; i < m_options.Length; i++)
         {
-            m_options[i].GetComponent<Answers>().isCorrect = false;
+            m_options[i].GetComponent<Image>().color = Color.grey;
+            m_options[i].GetComponent<Button>().interactable = true;
             m_options[i].transform.GetChild(0).GetComponent<Text>().text = m_database[m_currentQuestion].m_answers[i];
-            if(m_database[m_currentQuestion].m_correctAnswer == i+1)
+            if (m_database[m_currentQuestion].m_correctAnswer == i)
             {
                 m_options[i].GetComponent<Answers>().isCorrect = true;
             }
