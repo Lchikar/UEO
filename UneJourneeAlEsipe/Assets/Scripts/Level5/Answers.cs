@@ -29,11 +29,11 @@ public class Answers : MonoBehaviour
         if (isCorrect)
         {
             Debug.Log("Correct answer");
-            StartCoroutine("CorrectTimer", 5);
+            StartCoroutine("CorrectTimer", 2);
         } else
         {
             Debug.Log("Wrong answer");
-            StartCoroutine("WrongTimer", 5);
+            StartCoroutine("WrongTimer", 2);
         }
     }
 }

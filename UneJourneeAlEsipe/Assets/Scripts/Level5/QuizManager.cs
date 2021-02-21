@@ -52,7 +52,7 @@ public class QuizManager : MonoBehaviour
     {
         for(int i = 0; i < m_options.Length; i++)
         {
-            m_options[i].GetComponent<Image>().color = Color.grey;
+            m_options[i].GetComponent<Image>().color = Color.white;
             m_options[i].GetComponent<Button>().interactable = true;
             m_options[i].transform.GetChild(0).GetComponent<Text>().text = m_database[m_currentQuestion].m_answers[i];
             if (m_database[m_currentQuestion].m_correctAnswer == i)
