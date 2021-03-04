@@ -28,11 +28,15 @@ public class QTE : MonoBehaviour
                     break;
                 case 2:
                     m_waitingKey = 1;
-                    displayBox.GetComponent<Text>().text = "[R]";
+                    displayBox.GetComponent<Text>().text = "[S]";
                     break;
                 case 3:
                     m_waitingKey = 1;
-                    displayBox.GetComponent<Text>().text = "[T]";
+                    displayBox.GetComponent<Text>().text = "[I]";
+                    break;
+                case 4:
+                    m_waitingKey = 1;
+                    displayBox.GetComponent<Text>().text = "[P]";
                     break;
                 default:
                     break;
@@ -41,49 +45,53 @@ public class QTE : MonoBehaviour
 
         if(m_QTGen == 1)
         {
-            if(Input.anyKeyDown)
+
+            if (Input.anyKeyDown)
             {
-                if(Input.GetButtonDown("EKey"))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     m_correctKey = 1;
-                    StartCoroutine(KeyPressing());
-                } else
-                {
-                    m_correctKey = 2;
-                    StartCoroutine(KeyPressing());
+                   
                 }
+                StartCoroutine(KeyPressing());
             }
+            Debug.Log(m_correctKey);
         }
         if (m_QTGen == 2)
         {
+
             if (Input.anyKeyDown)
             {
-                if (Input.GetButtonDown("RKey"))
+                if (Input.GetKeyDown(KeyCode.S))
                 {
                     m_correctKey = 1;
-                    StartCoroutine(KeyPressing());
+                   
                 }
-                else
-                {
-                    m_correctKey = 2;
-                    StartCoroutine(KeyPressing());
-                }
+                StartCoroutine(KeyPressing());
             }
+            Debug.Log(m_correctKey);
         }
         if (m_QTGen == 3)
         {
+
             if (Input.anyKeyDown)
             {
-                if (Input.GetButtonDown("TKey"))
+                if (Input.GetKeyDown(KeyCode.I))
                 {
                     m_correctKey = 1;
-                    StartCoroutine(KeyPressing());
                 }
-                else
+                StartCoroutine(KeyPressing());
+            }
+        }
+        if (m_QTGen == 4)
+        {
+            if (Input.anyKeyDown)
+            {
+                if (Input.GetKeyDown(KeyCode.P))
                 {
-                    m_correctKey = 2;
-                    StartCoroutine(KeyPressing());
+                    m_correctKey = 1;
                 }
+                StartCoroutine(KeyPressing());
             }
         }
     }
@@ -98,7 +106,7 @@ public class QTE : MonoBehaviour
             m_passBox.GetComponent<Text>().text = "PASS";
             
         }
-        else if (m_correctKey == 2)
+        else if (m_correctKey != 1)
         {
             m_passBox.GetComponent<Text>().text = "FAIL";
         }
