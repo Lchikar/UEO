@@ -200,6 +200,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 25816aee9eefe6e4ea98d4fc7db229c7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddc84481b4ff5c44bbedda12a5761d0b, type: 2}
     - target: {fileID: 919132149155446097, guid: 25816aee9eefe6e4ea98d4fc7db229c7,
         type: 3}
       propertyPath: m_Name
@@ -405,6 +410,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 25816aee9eefe6e4ea98d4fc7db229c7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddc84481b4ff5c44bbedda12a5761d0b, type: 2}
     - target: {fileID: 919132149155446097, guid: 25816aee9eefe6e4ea98d4fc7db229c7,
         type: 3}
       propertyPath: m_Name
@@ -774,6 +784,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.1280694
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4fb882dce610d1544a5451dbeb954a97,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddc84481b4ff5c44bbedda12a5761d0b, type: 2}
     - target: {fileID: 919132149155446097, guid: 4fb882dce610d1544a5451dbeb954a97,
         type: 3}
       propertyPath: m_Name
@@ -1028,6 +1043,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: -1461304994638716399, guid: aaeacf38b026aef49b4038b8512bb711,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddc84481b4ff5c44bbedda12a5761d0b, type: 2}
     - target: {fileID: -516098083770646512, guid: aaeacf38b026aef49b4038b8512bb711,
         type: 3}
       propertyPath: m_TagString
@@ -1186,6 +1206,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.1280694
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4fb882dce610d1544a5451dbeb954a97,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddc84481b4ff5c44bbedda12a5761d0b, type: 2}
     - target: {fileID: 919132149155446097, guid: 4fb882dce610d1544a5451dbeb954a97,
         type: 3}
       propertyPath: m_Name
@@ -1376,6 +1401,7 @@ GameObject:
   - component: {fileID: 674433151}
   - component: {fileID: 674433150}
   - component: {fileID: 674433149}
+  - component: {fileID: 674433152}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1464,6 +1490,41 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!328 &674433152
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674433147}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 5a65f7dc354a5b446b98b5d6984624f1, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1001 &730804944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1541,6 +1602,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: -1461304994638716399, guid: aaeacf38b026aef49b4038b8512bb711,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddc84481b4ff5c44bbedda12a5761d0b, type: 2}
     - target: {fileID: -516098083770646512, guid: aaeacf38b026aef49b4038b8512bb711,
         type: 3}
       propertyPath: m_TagString
@@ -2025,6 +2091,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: -1461304994638716399, guid: aaeacf38b026aef49b4038b8512bb711,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddc84481b4ff5c44bbedda12a5761d0b, type: 2}
     - target: {fileID: -516098083770646512, guid: aaeacf38b026aef49b4038b8512bb711,
         type: 3}
       propertyPath: m_TagString
@@ -2278,6 +2349,7 @@ GameObject:
   - component: {fileID: 1099222381}
   - component: {fileID: 1099222380}
   - component: {fileID: 1099222379}
+  - component: {fileID: 1099222382}
   m_Layer: 0
   m_Name: front
   m_TagString: Obstacle
@@ -2292,13 +2364,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099222377}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.0000012892543, y: 0.70710677, z: -0.7071069, w: -0.000001286977}
   m_LocalPosition: {x: 0, y: -2, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1348944963}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -180}
 --- !u!64 &1099222379
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2332,7 +2404,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 138b1c8c116569b4da3896094707a881, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2362,6 +2434,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099222377}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!328 &1099222382
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099222377}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 5a65f7dc354a5b446b98b5d6984624f1, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 3
+  m_AspectRatio: 5
+  m_DataSource: 0
+  m_PlaybackSpeed: 1.9
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1001 &1121412608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2439,6 +2546,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 25816aee9eefe6e4ea98d4fc7db229c7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddc84481b4ff5c44bbedda12a5761d0b, type: 2}
     - target: {fileID: 919132149155446097, guid: 25816aee9eefe6e4ea98d4fc7db229c7,
         type: 3}
       propertyPath: m_Name
@@ -2870,6 +2982,7 @@ GameObject:
   - component: {fileID: 1406936479}
   - component: {fileID: 1406936478}
   - component: {fileID: 1406936477}
+  - component: {fileID: 1406936480}
   m_Layer: 0
   m_Name: left
   m_TagString: Obstacle
@@ -2884,13 +2997,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406936475}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0.49999985, y: -0.49999967, z: 0.50000054, w: -0.50000006}
   m_LocalPosition: {x: -5, y: -2, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1348944963}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 90, y: -360, z: -90}
 --- !u!64 &1406936477
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2924,7 +3037,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 138b1c8c116569b4da3896094707a881, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2954,6 +3067,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406936475}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!328 &1406936480
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406936475}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 5a65f7dc354a5b446b98b5d6984624f1, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1.9
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1 &1452548330
 GameObject:
   m_ObjectHideFlags: 0
@@ -3016,11 +3164,11 @@ Light:
   m_GameObject: {fileID: 1453395197}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 1
+  m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.35
-  m_Range: 10
+  m_Color: {r: 0.34117648, g: 0.8901961, b: 0.91764706, a: 1}
+  m_Intensity: 10.5
+  m_Range: 8.46
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3058,7 +3206,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3075,13 +3223,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453395197}
-  m_LocalRotation: {x: 0.3683221, y: 0.07453347, z: 0.013798567, w: 0.926603}
-  m_LocalPosition: {x: 0, y: 10.67, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.63, z: 2.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 42.884, y: 11.676, z: 6.306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1463802129
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3242,7 @@ GameObject:
   - component: {fileID: 1463802133}
   - component: {fileID: 1463802132}
   - component: {fileID: 1463802131}
+  - component: {fileID: 1463802134}
   m_Layer: 0
   m_Name: right
   m_TagString: Obstacle
@@ -3148,7 +3297,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 138b1c8c116569b4da3896094707a881, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3178,6 +3327,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463802129}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!328 &1463802134
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463802129}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 5a65f7dc354a5b446b98b5d6984624f1, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1.9
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1 &1508126005
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,6 +3533,7 @@ GameObject:
   - component: {fileID: 1548197752}
   - component: {fileID: 1548197751}
   - component: {fileID: 1548197750}
+  - component: {fileID: 1548197753}
   m_Layer: 0
   m_Name: top
   m_TagString: Obstacle
@@ -3403,7 +3588,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 138b1c8c116569b4da3896094707a881, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3433,6 +3618,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548197748}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!328 &1548197753
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548197748}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 5a65f7dc354a5b446b98b5d6984624f1, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1.9
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1 &1581520078
 GameObject:
   m_ObjectHideFlags: 0
@@ -3576,6 +3796,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.1280694
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4fb882dce610d1544a5451dbeb954a97,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ddc84481b4ff5c44bbedda12a5761d0b, type: 2}
     - target: {fileID: 919132149155446097, guid: 4fb882dce610d1544a5451dbeb954a97,
         type: 3}
       propertyPath: m_Name
@@ -3894,7 +4119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850731853}
   m_LocalRotation: {x: -0, y: -0.019660687, z: -0, w: 0.9998067}
-  m_LocalPosition: {x: 0.5, y: 6.66, z: -7.83}
+  m_LocalPosition: {x: 0.5, y: 6.66, z: -7}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3912,6 +4137,7 @@ GameObject:
   - component: {fileID: 1919569549}
   - component: {fileID: 1919569548}
   - component: {fileID: 1919569547}
+  - component: {fileID: 1919569550}
   m_Layer: 0
   m_Name: bottom
   m_TagString: Obstacle
@@ -3966,7 +4192,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 138b1c8c116569b4da3896094707a881, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3996,6 +4222,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919569545}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!328 &1919569550
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919569545}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 5a65f7dc354a5b446b98b5d6984624f1, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1.9
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1001 &1999029077
 PrefabInstance:
   m_ObjectHideFlags: 0
