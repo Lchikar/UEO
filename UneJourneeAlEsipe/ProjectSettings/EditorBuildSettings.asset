@@ -5,7 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Character Generator.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/0-Ecran-Titre/Accueil.unity
+    guid: f01dfc30e6acc854ab65ede3b98f3d6d
+  - enabled: 1
+    path: Assets/Scenes/1-Reveil/Level1.unity
+    guid: 6cca53dbbdc647644bd9b4562a657538
+  - enabled: 1
+    path: Assets/Scenes/2-Petit-dejeuner/Petit-dejeuner.unity
+    guid: 31d46a848a4a58648bf79f7f0580d78e
+  - enabled: 1
+    path: Assets/Scenes/3-Transports/Level3.unity
+    guid: 1303ba0cce5a0164db8421f9f4e45a1d
+  - enabled: 1
+    path: Assets/Scenes/4-Couloirs/Level4.unity
+    guid: 0be8cccdcd3b70549a52d4103db898fa
+  - enabled: 1
+    path: Assets/Scenes/5-Cours/Level5.unity
+    guid: 7cf6afd827a09054ea6c308968ff02c4
+  - enabled: 1
+    path: Assets/Scenes/6-Ecran-Fin/Credits.unity
+    guid: 61496a79071bca345a57ab9df32f5d51
   m_configObjects: {}
