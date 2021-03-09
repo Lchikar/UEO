@@ -3,10 +3,19 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class Answers : MonoBehaviour
 {
     public bool isCorrect = false;
     public QuizManager quizManager;
+    public AudioClip audioWin;
+    public AudioClip audioLoose;
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = gameObject.GetComponent<AudioSource>();
+    }
 
     IEnumerator CorrectTimer(float seconds)
     {
@@ -29,11 +38,15 @@ public class Answers : MonoBehaviour
         if (isCorrect)
         {
             Debug.Log("Correct answer");
-            StartCoroutine("CorrectTimer", 2);
+            audioSource.clip = audioWin;
+            audioSource.Play(0);
+            StartCoroutine("CorrectTimer", 1);
         } else
         {
             Debug.Log("Wrong answer");
-            StartCoroutine("WrongTimer", 2);
+            audioSource.clip = audioLoose;
+            audioSource.Play(0);
+            StartCoroutine("WrongTimer", 1);
         }
     }
 }
