@@ -10,12 +10,6 @@ public class GameHandler : MonoBehaviour
         SceneManager.LoadScene(levelToLoad);
     }
 
-
-    public void GoToScene(string nameScene)
-    {
-        SceneManager.LoadScene(nameScene);
-    }
-
     public void QuitGame()
     {
         Application.Quit();

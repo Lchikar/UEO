@@ -2,40 +2,44 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QTE : MonoBehaviour
 {
     public GameObject displayBox;
     public GameObject m_passBox;
-    public int m_QTGen;
-    public int m_waitingKey;
-    public int m_correctKey;
-    public int m_countingDown;
+    public GameHandler gameHandler;
+
+    private int m_QTGen;
+    private int m_waitingKey;
+    private int m_correctKey;
+    private int m_countingDown;
+    private int m_score = 0;
 
     // Update is called once per frame
     void Update()
-    {
-        if(m_waitingKey == 0)
+    { 
+        if (m_waitingKey == 0)
         {
-            m_QTGen = Random.Range(1, 4);
+            m_QTGen = Random.Range(1, 5);
             m_countingDown = 1;
             StartCoroutine(CountDown());
-            switch(m_QTGen)
+            switch (m_QTGen)
             {
                 case 1:
                     m_waitingKey = 1;
                     displayBox.GetComponent<Text>().text = "[E]";
                     break;
                 case 2:
-                    m_waitingKey = 1;
+                    m_waitingKey = 2;
                     displayBox.GetComponent<Text>().text = "[S]";
                     break;
                 case 3:
-                    m_waitingKey = 1;
+                    m_waitingKey = 3;
                     displayBox.GetComponent<Text>().text = "[I]";
                     break;
                 case 4:
-                    m_waitingKey = 1;
+                    m_waitingKey = 4;
                     displayBox.GetComponent<Text>().text = "[P]";
                     break;
                 default:
@@ -45,7 +49,6 @@ public class QTE : MonoBehaviour
 
         if(m_QTGen == 1)
         {
-
             if (Input.anyKeyDown)
             {
                 if (Input.GetKeyDown(KeyCode.E))
@@ -55,7 +58,6 @@ public class QTE : MonoBehaviour
                 }
                 StartCoroutine(KeyPressing());
             }
-            Debug.Log(m_correctKey);
         }
         if (m_QTGen == 2)
         {
@@ -69,7 +71,6 @@ public class QTE : MonoBehaviour
                 }
                 StartCoroutine(KeyPressing());
             }
-            Debug.Log(m_correctKey);
         }
         if (m_QTGen == 3)
         {
@@ -94,16 +95,21 @@ public class QTE : MonoBehaviour
                 StartCoroutine(KeyPressing());
             }
         }
+
+        if(m_score == 5)
+        {
+            gameHandler.LoadLevel("Petit-dejeuner");
+        }
     }
 
     IEnumerator KeyPressing()
     {
-        m_QTGen = 4;
-        m_countingDown = 2;
-        
+        m_QTGen = 5;
         if (m_correctKey == 1)
         {
+            m_countingDown = 2;
             m_passBox.GetComponent<Text>().text = "PASS";
+            m_score += 1;
             
         }
         else if (m_correctKey != 1)
@@ -122,10 +128,10 @@ public class QTE : MonoBehaviour
 
     IEnumerator CountDown()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(3.0f);
         if(m_countingDown == 1)
         {
-            m_QTGen = 4;
+            m_QTGen = 5;
             m_countingDown = 2;
             m_passBox.GetComponent<Text>().text = "FAIL";
             yield return new WaitForSeconds(1.5f);
