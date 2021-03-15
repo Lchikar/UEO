@@ -8,8 +8,8 @@ public class Answers : MonoBehaviour
 {
     public bool isCorrect = false;
     public QuizManager quizManager;
-    public AudioClip audioWin;
-    public AudioClip audioLoose;
+    [SerializeField] AudioClip audioWin;
+    [SerializeField] AudioClip audioLoose;
     AudioSource audioSource;
 
     void Start()

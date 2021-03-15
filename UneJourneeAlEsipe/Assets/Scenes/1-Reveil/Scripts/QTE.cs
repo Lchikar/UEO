@@ -4,17 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class QTE : MonoBehaviour
 {
-    public GameObject displayBox;
-    public GameObject m_passBox;
-    public GameHandler gameHandler;
+    [SerializeField] GameObject displayBox;
+    [SerializeField] GameObject m_passBox;
+    [SerializeField] GameHandler gameHandler;
+    [SerializeField] AudioClip goodAnswer;
+    [SerializeField] AudioClip wrongAnswer;
+    AudioSource audioSource;
 
     private int m_QTGen;
     private int m_waitingKey;
     private int m_correctKey;
     private int m_countingDown;
     private int m_score = 0;
+
+    void Start()
+    {
+        audioSource = gameObject.GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -109,12 +118,16 @@ public class QTE : MonoBehaviour
         {
             m_countingDown = 2;
             m_passBox.GetComponent<Text>().text = "PASS";
+            audioSource.clip = goodAnswer;
+            audioSource.Play(0);
             m_score += 1;
             
         }
         else if (m_correctKey != 1)
         {
             m_passBox.GetComponent<Text>().text = "FAIL";
+            audioSource.clip = wrongAnswer;
+            audioSource.Play(0);
         }
 
         yield return new WaitForSeconds(1.5f);
