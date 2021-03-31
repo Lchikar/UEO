@@ -7,22 +7,25 @@ public class ButtonController : MonoBehaviour
 {
     public KeyCode keyToPress;
     public float rescale;
+    SpriteRenderer spriteRenderer;
+    public Sprite mainSprite;
+    public Sprite newSprite;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(keyToPress)){
            transform.localScale *= rescale;
+            spriteRenderer.sprite = newSprite;
         }
 
         if(Input.GetKeyUp(keyToPress)){
            transform.localScale /= rescale;
+           spriteRenderer.sprite = mainSprite;
         }
     }
 }
