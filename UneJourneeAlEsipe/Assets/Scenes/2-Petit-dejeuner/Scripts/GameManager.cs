@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour
     public int currentScore;
     public int scorePerNote = 50;
     public int scorePerPerfectNote = 100;
-
+    public GameHandler gameHandler;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +42,12 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        GameObject.Find("ScoreText").GetComponent<TMP_Text>().text = "Score : " + currentScore;
+        GameObject.Find("ScoreText").GetComponent<UnityEngine.UI.Text>().text = "Score : " + currentScore;
+
+        if (currentScore >= 1000)
+        {
+            gameHandler.LoadLevel("Level3");
+        }
     }
 
     public void NoteHit(int quality)
