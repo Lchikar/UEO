@@ -53,22 +53,18 @@ public class QTE : MonoBehaviour
             {
                 case 1:
                     m_waitingKey = 1;
-                    //displayBox.GetComponent<Text>().text = "[E]";
                     displayBox.GetComponent<Image>().overrideSprite = Efull;
                     break;
                 case 2:
                     m_waitingKey = 2;
-                    //displayBox.GetComponent<Text>().text = "[S]";
                     displayBox.GetComponent<Image>().overrideSprite = Sfull;
                     break;
                 case 3:
                     m_waitingKey = 3;
-                    //displayBox.GetComponent<Text>().text = "[I]";
                     displayBox.GetComponent<Image>().overrideSprite = Ifull;
                     break;
                 case 4:
                     m_waitingKey = 4;
-                    //displayBox.GetComponent<Text>().text = "[P]";
                     displayBox.GetComponent<Image>().overrideSprite = Pfull;
                     break;
                 default:
@@ -127,8 +123,7 @@ public class QTE : MonoBehaviour
 
         if(m_score == 5)
         {
-            gameHandler.LoadLevel("Demo-Ending");
-            //gameHandler.LoadLevel("Petit-dejeuner");
+            gameHandler.LoadLevel("Petit-dejeuner");
         }
     }
 
@@ -154,7 +149,6 @@ public class QTE : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         m_correctKey = 0;
         m_passBox.GetComponent<Text>().text = "";
-        //displayBox.GetComponent<Text>().text = "";
         displayBox.GetComponent<Image>().sprite = defaultSprite;
         yield return new WaitForSeconds(1.5f);
         m_waitingKey = 0;
@@ -178,7 +172,6 @@ public class QTE : MonoBehaviour
             yield return new WaitForSeconds(1.5f);
             m_correctKey = 0;
             m_passBox.GetComponent<Text>().text = "";
-            //displayBox.GetComponent<Text>().text = "";
             displayBox.GetComponent<Image>().sprite = defaultSprite;
             yield return new WaitForSeconds(1.5f);
             m_waitingKey = 0;
