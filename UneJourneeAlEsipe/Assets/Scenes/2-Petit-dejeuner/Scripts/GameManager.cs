@@ -3,26 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public AudioSource theMusic;
 
-    public bool startPlaying;
+    private bool startPlaying = false;
 
     public BeatScroller theBS;
+    public GameObject notes;
 
     public static GameManager instance;
 
+    public Text score;
     public int currentScore;
     public int scorePerNote = 50;
     public int scorePerPerfectNote = 100;
     public GameHandler gameHandler;
 
     // Start is called before the first frame update
-    void Start()
+    public void startGame()
     {
-        startPlaying = false;
+        startPlaying = true;
 
         instance = this;
 
@@ -30,19 +33,31 @@ public class GameManager : MonoBehaviour
 
     }
 
+
     // Update is called once per frame
     void Update()
     {
-        if (!startPlaying) {
+        if(notes.transform.position.y <= -31f)
+        {
+            Debug.Log("\tTry again");
+
+            notes.transform.position = new Vector3(0, 5.3f, -2.8f);
+            for (int i = 0; i < notes.transform.childCount; i++)
+            {
+                notes.transform.GetChild(i).gameObject.SetActive(true);
+            }
+        }
+
+        if (startPlaying) {
             if (true)//Input.anyKeyDown)
             {
-                startPlaying = true;
+                startPlaying = false;
                 theBS.hasStarted = true;
                 theMusic.Play();
             }
         }
 
-        GameObject.Find("ScoreText").GetComponent<UnityEngine.UI.Text>().text = "Score : " + currentScore;
+        score.text = "Score : " + currentScore;
 
         if (currentScore >= 1000)
         {

@@ -7,16 +7,43 @@ public class EyeLidsAnimation : MonoBehaviour
     public Animator topLid;
     public Animator bottomLid;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.anyKeyDown)
-        {
-            topLid.Play("topLid");
-            bottomLid.Play("bottomLid");
+    private float time;
+    public float freqBlink;
 
-            topLid.Play("Default");
-            bottomLid.Play("Default");
+    void Stard()
+    {
+        time = 0;
+    }
+
+    private void Blink()
+    {
+        topLid.Play("topLid");
+        bottomLid.Play("bottomLid");
+
+        topLid.Play("Default");
+        bottomLid.Play("Default");
+    }
+
+    void  Update()
+    {
+        time += Time.deltaTime;
+        while(time >= freqBlink)
+        {
+            Blink();
+            time -= freqBlink;
         }
     }
+
+    
+    //void Update()
+    //{
+    //    if (Input.anyKeyDown)
+    //    {
+    //        topLid.Play("topLid");
+    //        bottomLid.Play("bottomLid");
+
+    //        topLid.Play("Default");
+    //        bottomLid.Play("Default");
+    //    }
+    //}
 }
