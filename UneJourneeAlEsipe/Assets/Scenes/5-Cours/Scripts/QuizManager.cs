@@ -16,7 +16,7 @@ public class QuizManager : MonoBehaviour
     private int m_totalQuestions = 0;
     private int m_score;
 
-    private void Start()
+    public void StartGame()
     {
         m_totalQuestions = m_database.Count;
         m_gameObjectPanel.SetActive(false);
