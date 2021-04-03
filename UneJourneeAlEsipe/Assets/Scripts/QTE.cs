@@ -154,7 +154,6 @@ public class QTE : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         m_correctKey = 0;
         m_passBox.GetComponent<Text>().text = "";
-        //displayBox.GetComponent<Text>().text = "";
         displayBox.GetComponent<Image>().sprite = defaultSprite;
         yield return new WaitForSeconds(1.5f);
         m_waitingKey = 0;
@@ -178,9 +177,7 @@ public class QTE : MonoBehaviour
             yield return new WaitForSeconds(1.5f);
             m_correctKey = 0;
             m_passBox.GetComponent<Text>().text = "";
-            //displayBox.GetComponent<Text>().text = "";
             displayBox.GetComponent<Image>().sprite = defaultSprite;
-            yield return new WaitForSeconds(1.5f);
             m_waitingKey = 0;
             m_countingDown = 1;
         } 
