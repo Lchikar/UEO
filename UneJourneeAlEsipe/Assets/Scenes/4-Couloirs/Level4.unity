@@ -663,6 +663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8008009715953512546, guid: 1e895f964a87db14cb72503ea3449dd1,
         type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008009715953512546, guid: 1e895f964a87db14cb72503ea3449dd1,
+        type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 22
       objectReference: {fileID: 0}
@@ -803,9 +808,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8008009716063670643, guid: 1e895f964a87db14cb72503ea3449dd1,
         type: 3}
+      propertyPath: dialogToPlay.sentences.Array.data[19].text
+      value: "En g\xE9nie m\xE9canique, j'aime bien r\xE9soudre des probl\xE8mes
+        de conception !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008009716063670643, guid: 1e895f964a87db14cb72503ea3449dd1,
+        type: 3}
       propertyPath: dialogEndedCallback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 317118857}
+    - target: {fileID: 8008009716063670643, guid: 1e895f964a87db14cb72503ea3449dd1,
+        type: 3}
+      propertyPath: dialogEndedCallback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level5
+      objectReference: {fileID: 0}
     - target: {fileID: 8008009716175482492, guid: 1e895f964a87db14cb72503ea3449dd1,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -818,13 +834,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8008009716576867493, guid: 1e895f964a87db14cb72503ea3449dd1,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1049.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008009716576867493, guid: 1e895f964a87db14cb72503ea3449dd1,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 162.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008009716576867493, guid: 1e895f964a87db14cb72503ea3449dd1,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -259
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 8008009716576867493, guid: 1e895f964a87db14cb72503ea3449dd1,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -399
+      value: -427
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008009716576867498, guid: 1e895f964a87db14cb72503ea3449dd1,
+        type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8008009716576867498, guid: 1e895f964a87db14cb72503ea3449dd1,
         type: 3}

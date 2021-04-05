@@ -126,7 +126,7 @@ public class QTE : MonoBehaviour
 
         if(m_score == 5)
         {
-            gameHandler.LoadLevel("Petit-dejeuner");
+            gameHandler.LoadLevel("Level2");
         }
     }
 
