@@ -538,7 +538,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: "L'ESIPE a des questions pour toi ! \nS\xE9lectionne la bonne r\xE9ponse
-        et obtient ton score final !"
+        et obtiens ton score final !"
       objectReference: {fileID: 0}
     - target: {fileID: 3352803996092481480, guid: d8980b644de031f4f831eadc0b37d79f,
         type: 3}
